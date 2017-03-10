@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C3D04BD51E726F8E00CBBE0A /* KUIPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D04BD31E726F8E00CBBE0A /* KUIPopupController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3EECE4C1E727D3C00568F14 /* KUIPopupModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EECE4B1E727D3C00568F14 /* KUIPopupModalViewController.swift */; };
+		C3EECE541E728BAB00568F14 /* KUIPopupContentViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EECE531E728BAB00568F14 /* KUIPopupContentViewAnimator.swift */; };
 		C3F383DD1E72700D00B70B6D /* KUIPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F383DC1E72700D00B70B6D /* KUIPopupController.swift */; };
 /* End PBXBuildFile section */
 
@@ -15,6 +17,8 @@
 		C3D04BD01E726F8E00CBBE0A /* KUIPopupController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KUIPopupController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D04BD31E726F8E00CBBE0A /* KUIPopupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KUIPopupController.h; sourceTree = "<group>"; };
 		C3D04BD41E726F8E00CBBE0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EECE4B1E727D3C00568F14 /* KUIPopupModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KUIPopupModalViewController.swift; sourceTree = "<group>"; };
+		C3EECE531E728BAB00568F14 /* KUIPopupContentViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KUIPopupContentViewAnimator.swift; sourceTree = "<group>"; };
 		C3F383DC1E72700D00B70B6D /* KUIPopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KUIPopupController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				C3F383DC1E72700D00B70B6D /* KUIPopupController.swift */,
+				C3EECE4B1E727D3C00568F14 /* KUIPopupModalViewController.swift */,
+				C3EECE531E728BAB00568F14 /* KUIPopupContentViewAnimator.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -143,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EECE541E728BAB00568F14 /* KUIPopupContentViewAnimator.swift in Sources */,
 				C3F383DD1E72700D00B70B6D /* KUIPopupController.swift in Sources */,
+				C3EECE4C1E727D3C00568F14 /* KUIPopupModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

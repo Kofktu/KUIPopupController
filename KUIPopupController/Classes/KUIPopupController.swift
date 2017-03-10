@@ -8,6 +8,13 @@
 
 import UIKit
 
-public final class KUIPopupController {
-    
+public protocol KUIPopupContentViewProtocol {
+    var modalBackgroundColor: UIColor? { get }
+    var animator: KUIPopupContentViewAnimator? { get }
+}
+
+public extension KUIPopupContentViewProtocol {
+    var modalBackgroundColor: UIColor? {
+        return UIColor.black.withAlphaComponent(0.6)
+    }
 }

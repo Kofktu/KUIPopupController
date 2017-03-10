@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3EECE4E1E72853A00568F14 /* KUIPopupController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F383DA1E726FBB00B70B6D /* KUIPopupController.framework */; };
+		C3EECE4F1E72853A00568F14 /* KUIPopupController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3F383DA1E726FBB00B70B6D /* KUIPopupController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C3F383C41E726FB600B70B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F383C31E726FB600B70B6D /* AppDelegate.swift */; };
 		C3F383C61E726FB600B70B6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F383C51E726FB600B70B6D /* ViewController.swift */; };
 		C3F383C91E726FB600B70B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F383C71E726FB600B70B6D /* Main.storyboard */; };
@@ -15,6 +17,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C3EECE501E72853A00568F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3F383D51E726FBB00B70B6D /* KUIPopupController.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C3D04BCF1E726F8E00CBBE0A;
+			remoteInfo = KUIPopupController;
+		};
 		C3F383D91E726FBB00B70B6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C3F383D51E726FBB00B70B6D /* KUIPopupController.xcodeproj */;
@@ -23,6 +32,20 @@
 			remoteInfo = KUIPopupController;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3EECE521E72853A00568F14 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C3EECE4F1E72853A00568F14 /* KUIPopupController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C3F383C01E726FB600B70B6D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EECE4E1E72853A00568F14 /* KUIPopupController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +118,12 @@
 				C3F383BC1E726FB600B70B6D /* Sources */,
 				C3F383BD1E726FB600B70B6D /* Frameworks */,
 				C3F383BE1E726FB600B70B6D /* Resources */,
+				C3EECE521E72853A00568F14 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C3EECE511E72853A00568F14 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -178,6 +204,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3EECE511E72853A00568F14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KUIPopupController;
+			targetProxy = C3EECE501E72853A00568F14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C3F383C71E726FB600B70B6D /* Main.storyboard */ = {
@@ -293,6 +327,7 @@
 		C3F383D31E726FB600B70B6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -305,6 +340,7 @@
 		C3F383D41E726FB600B70B6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
