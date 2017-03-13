@@ -1,7 +1,7 @@
 # KUIPopupController
 - Simple Popup ContentView in iOS
 
-![alt tag](Screenshot/Example.gif)
+![alt tag](Screenshot/Sample.gif)
 
 ## Requirements
 - iOS 8.0+
