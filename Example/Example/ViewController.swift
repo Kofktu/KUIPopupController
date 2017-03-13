@@ -30,19 +30,45 @@ class ViewController: UIViewController {
         view.animator = FromTopTranslationAnimator()
         view.show()
     }
+    
+    @IBAction func onAutolayoutCustomView() {
+        let view = ContentAutoLayoutView.view()
+        view?.textLabel.text = "TEXT\nTEXT\nTEXT\nTEXTTEXTTEXT\nTEXT"
+        view?.animator = FromTopTranslationAnimator()
+        view?.show()
+    }
 }
 
 class ContentView: UIView, KUIPopupContentViewProtocol {
     var animator: KUIPopupContentViewAnimator?
-//    var modalBackgroundColor: UIColor? {
-//        return UIColor.blue.withAlphaComponent(0.2)
-//    }
+    var modalBackgroundColor: UIColor? {
+        return UIColor.blue.withAlphaComponent(0.2)
+    }
+    
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         dismiss(true)
     }
 }
 
+class ContentAutoLayoutView: UIView, KUIPopupContentViewProtocol {
+    var animator: KUIPopupContentViewAnimator?
+    
+    @IBOutlet weak var textLabel: UILabel!
+    
+    class func view() -> ContentAutoLayoutView? {
+        let view = Bundle.main.loadNibNamed("ContentAutoLayoutView", owner: nil, options: nil)?.first as? ContentAutoLayoutView
+        view?.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }
+    
+    // MARK: - Action
+    @IBAction func onClose(_ sender: UIButton) {
+        dismiss(true)
+    }
+}
+
+// MARK: - Custom Animator
 class OpacityAnimator: KUIPopupContentViewAnimator {
     func animate(_ parameter: KUIPopupContentViewAnimatorStateParameter, completion: @escaping (Bool) -> Void) {
         let isShow = parameter.isShow

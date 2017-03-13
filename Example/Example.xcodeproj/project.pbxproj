@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C356777A1E76789A001D95A6 /* ContentAutoLayoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35677791E76789A001D95A6 /* ContentAutoLayoutView.xib */; };
 		C3EECE4E1E72853A00568F14 /* KUIPopupController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F383DA1E726FBB00B70B6D /* KUIPopupController.framework */; };
 		C3EECE4F1E72853A00568F14 /* KUIPopupController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3F383DA1E726FBB00B70B6D /* KUIPopupController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C3F383C41E726FB600B70B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F383C31E726FB600B70B6D /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C35677791E76789A001D95A6 /* ContentAutoLayoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentAutoLayoutView.xib; sourceTree = "<group>"; };
 		C3F383C01E726FB600B70B6D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F383C31E726FB600B70B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F383C51E726FB600B70B6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				C3F383C31E726FB600B70B6D /* AppDelegate.swift */,
 				C3F383C51E726FB600B70B6D /* ViewController.swift */,
 				C3F383C71E726FB600B70B6D /* Main.storyboard */,
+				C35677791E76789A001D95A6 /* ContentAutoLayoutView.xib */,
 				C3F383CA1E726FB600B70B6D /* Assets.xcassets */,
 				C3F383CC1E726FB600B70B6D /* LaunchScreen.storyboard */,
 				C3F383CF1E726FB600B70B6D /* Info.plist */,
@@ -188,6 +191,7 @@
 				C3F383CE1E726FB600B70B6D /* LaunchScreen.storyboard in Resources */,
 				C3F383CB1E726FB600B70B6D /* Assets.xcassets in Resources */,
 				C3F383C91E726FB600B70B6D /* Main.storyboard in Resources */,
+				C356777A1E76789A001D95A6 /* ContentAutoLayoutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
