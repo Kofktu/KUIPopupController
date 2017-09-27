@@ -1,14 +1,17 @@
 # KUIPopupController
+
+![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)
+[![CocoaPods](http://img.shields.io/cocoapods/v/KUIPopupController.svg?style=flat)](http://cocoapods.org/?q=name%3AKUIPopupController%20author%3AKofktu)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 - Simple Popup ContentView in iOS
 
 ![alt tag](Screenshot/Sample.gif)
 
 ## Requirements
 - iOS 8.0+
-- Swift 3.0
-
-## Example
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+- Swift 4.0
+- Swift 3.0 ([0.0.1](https://github.com/Kofktu/KUIPopupController/tree/0.0.1))
 
 ## Installation
 
